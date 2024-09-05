@@ -55,7 +55,10 @@ class MonolingualDataset(Dataset):
                  }
 
 def get_ds(config, tokenizer, split='train'):
-    ds = load_dataset(config['dataset'], config['subset'])[split]['text']
+    if config['dataset'] == "stanfordnlp/imdb":
+        ds = load_dataset(config['dataset'])[split]['text']
+    else:
+        ds = load_dataset(config['dataset'], config['subset'])[split]['text']
 
     if split == 'train' and config['train_size'] != 1:
         idx = int(len(ds) * config['train_size'])

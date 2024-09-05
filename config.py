@@ -52,8 +52,8 @@ def get_config(lora=False):
 
                 # LoRA
                 "lora": True,
-                #### 'attention' / 'feed_forward' / 'output' / 'projection'
-                "target_modules": ['attention' / 'feed_forward' / 'output' / 'projection'],
+                #### 'attention' / 'projection' / 'feed_forward' / 'output'
+                "target_modules": ['attention', 'projection', 'feed_forward', 'output'],
                 "rank": 16,
                 "lora_alpha": 32,
                 "lora_dropout" : 0.1

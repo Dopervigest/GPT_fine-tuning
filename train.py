@@ -150,6 +150,7 @@ def train(config):
     # ========================================
     test_dataloader = get_ds(config, tokenizer, 'test')
     batch_iterator = tqdm(test_dataloader, desc='Test epoch')
+    epoch_loss = 0
     model.eval()
 
     for batch in batch_iterator:
