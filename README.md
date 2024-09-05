@@ -61,7 +61,7 @@ To train LoRA models, just pass the flag `-l`:
 
 `python train.py -l`
 
-By default, it will train the LoRA-4 model, but it can be changed in **config.py** by selecting a different set of `target_modules`. 
+By default, it will train the LoRA-4 model, but it can be changed in **config.py** by selecting a different set of ___target_modules___. 
 
 The pipeline will create two folders to store fine-tuned weights and logs: *weights/* and *runs/* respectively.
 
