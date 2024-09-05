@@ -69,6 +69,8 @@ This project uses Tensorboard, so you can monitor all the necessary information 
 
 `tensorboard --logdir runs`
 
+After training is complete, you can use **benchmark.ipynb** to evaluate your models. 
+
 
 ## License
 This project uses MIT Licence.
