@@ -34,7 +34,7 @@ In this study, we compared the performance of a fully fine-tuned model with four
 The performance of the baseline and fine-tuned models was evaluated using the Perplexity score, based on [WikiText-2](https://huggingface.co/datasets/Salesforce/wikitext), [LAMBADA](https://huggingface.co/datasets/EleutherAI/lambada_openai) and [IMDB](https://huggingface.co/datasets/stanfordnlp/imdb) benchmarks. The results are presented here:
 
 | Model       | WikiText-2 | LAMBADA   | IMDB       |
-|-------------|------------|------------------------|
+|-------------|:----------:|:---------:|-----------:|
 | Baseline    | 205.951    | 1125.641  | 303.168    |
 | Full model  | 2.474      | 3.236     | 19.727     |
 | LoRA-1      | 2.522      | 5.65      | 95.456     |
